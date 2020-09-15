@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>TODO</h3>
+    <form *ngIf="!!todo" (ngSubmit)="!todoForm.invalid && updateToDo()" #todoForm="ngForm">
+        <div class="alert alert-warning" *ngIf="todoForm.dirty && todoForm.invalid">
+            <span *ngIf="todoForm.dirty && todoForm.invalid">*Enter Valid Values*</span><br>
+            <span *ngIf="taskName.dirty && taskName.invalid"> - Task Name should have min 5 characters</span><br>
+            <span *ngIf="targateDate.dirty && targateDate.invalid"> - Targate date should be defind</span>
+        </div>
+        <div class="form-group">
+            <label for="taskName">Task Name</label>
+            <input type="text" [(ngModel)]= "todo.taskName" name ="taskName" class="form-control" id="taskName" placeholder="ex. Attend meeting" required="required" minlength="5" maxlength="50" #taskName='ngModel'>
+        </div>
+        <div class="form-group">
+            <label for="discription">Discription</label>
+            <textarea rows="3" [(ngModel)]= "todo.taskDescription" name ="taskDescription" class="form-control" id="discription" placeholder="ex. mitting for new project" maxlength="300"> </textarea>
+        </div>
+        <div class="form-group">
+            <label for="dateTime">Targate Date</label>
+            <input type="date"  #targateDate="ngModel" [ngModel]="todo.targetDate | date:'yyyy-MM-dd' " (ngModelChange)="todo.targetDate = $event"  name ="targetDate" class="form-control" id="dateTime" required="required">
+        </div>
+        <div class="form-group form-check">
+            <input [(ngModel)]= "todo.completed" name ="completed" type="checkbox" class="form-check-input" id="isCompleted">
+            <label class="form-check-label" for="isCompleted">Is Task Completed</label>
+          </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+</div>

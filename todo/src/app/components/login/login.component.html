@@ -1,0 +1,8 @@
+<div *ngIf = "!isAuthenticated">
+    <span>{{autherrorMessage}}</span>
+</div>
+<form>
+    username:<input type="text" [(ngModel)]="username" name ="username">
+    password:<input type="password" value='password'>
+    <input type="button" (click)="authenticateBasic()" value="login">
+</form>
