@@ -18,8 +18,8 @@ import java.time.LocalDate;
 public class ToDo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @GeneratedValue
+    private Long id;
 
     @NonNull
     private String taskName;
