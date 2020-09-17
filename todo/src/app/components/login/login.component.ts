@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 //import {HardcodedAuthenticationService} from '../../service/hardcoded-authentication.service'
-import {BasicAuthenticationServiceService} from '../../service/basic-authentication-service.service'
+//import {BasicAuthenticationServiceService} from '../../service/basic-authentication-service.service'
+import {JWTauthenticationService} from '../../service/jwtauthentication.service'
 
 @Component({
   selector: 'app-login',
@@ -10,15 +11,16 @@ import {BasicAuthenticationServiceService} from '../../service/basic-authenticat
 })
 export class LoginComponent implements OnInit {
 
-  username = 'admin';
-  password = 'admin';
+  username;
+  password;
   autherrorMessage = 'Ivalid credentials !'
   isAuthenticated = false
   window: any;
 
   constructor(private router: Router, 
     //private hardcodedAuthenticationService: HardcodedAuthenticationService, 
-    private basicAuthService: BasicAuthenticationServiceService
+    //private basicAuthService: BasicAuthenticationServiceService
+    private JWTAuthService: JWTauthenticationService
     ) { }
 
   ngOnInit(): void {
@@ -35,7 +37,7 @@ export class LoginComponent implements OnInit {
 
   authenticateBasic() {
     console.log('authenticating user');
-    this.basicAuthService.executeBasisAuthenticationService(this.username, this.password).subscribe(
+    this.JWTAuthService.executeJWTAuthenticationService(this.username, this.password).subscribe(
       data =>  {
         this.isAuthenticated = true;
         this.router.navigate(['welcome', this.username]).then(() =>  this.window.location.reload())

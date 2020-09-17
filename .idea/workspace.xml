@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d836072f-9379-475d-8ad2-0db147f31971" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hXseNCarfUAH8eIkUnOLQGAHfD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d836072f-9379-475d-8ad2-0db147f31971" name="Default Changelist" comment="" />
+      <created>1600168867258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600168867258</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="270" width="424" height="574" key="FileChooserDialogImpl" timestamp="1600170031805">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="270" width="424" height="574" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1600170031805" />
+    <state x="565" y="334" width="780" height="446" key="NewModule_or_Project.wizard" timestamp="1600170035125">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="565" y="334" width="780" height="446" key="NewModule_or_Project.wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1600170035125" />
+    <state x="443" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1600170018692">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="443" y="131" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1600170018692" />
+  </component>
+</project>

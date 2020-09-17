@@ -3,6 +3,6 @@
 </div>
 <form>
     username:<input type="text" [(ngModel)]="username" name ="username">
-    password:<input type="password" value='password'>
+    password:<input type="password" [(ngModel)]="password" name='password'>
     <input type="button" (click)="authenticateBasic()" value="login">
 </form>
